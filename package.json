@@ -1,0 +1,16 @@
+{
+  "name": "@ashwindmk/configer",
+  "version": "0.0.1",
+  "description": "Easy config manager for Node JS apps",
+  "main": "configer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ashwin Dinesh",
+  "homepage": "https://github.com/ashwindmk/nodejs_configer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ashwindmk/nodejs_configer.git"
+  },
+  "license": "ISC"
+}
