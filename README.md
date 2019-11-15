@@ -12,7 +12,8 @@ Node JS library to easily set application environment and use configuration cons
 npm i @ashwindmk/configer
 ```
 
-### Set Config JSON File
+
+### Create Config JSON File
 
 Sample `config.json`
 
@@ -47,12 +48,18 @@ Sample `config.json`
 Here **development** and **production** are the two different environments.
 
 
-### Set the Environment
+### Set the config JSON File
 
 ```javascript
 const configer = require('@ashwindmk/configer');
 
 configer.setFile('./config.json');
+```
+
+
+### Set the Environment
+
+```javascript
 configer.setEnv('development');
 ```
 
