@@ -1,6 +1,9 @@
+
 # Configer
 
 Node JS library to easily set application environment and use configuration constants.
+
+[![npm version](https://badge.fury.io/js/%40ashwindmk%2Fconfiger.svg)](https://badge.fury.io/js/%40ashwindmk%2Fconfiger)
 
 
 ### Install
@@ -13,7 +16,7 @@ npm i @ashwindmk/configer
 
 Sample `config.json`
 
-```json
+```JSON
 {
     "development": {
         "mysql": {
