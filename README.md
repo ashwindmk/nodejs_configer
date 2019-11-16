@@ -13,6 +13,21 @@ npm i @ashwindmk/configer
 ```
 
 
+### Update
+
+Check if the module version is out-dated:
+
+```shell
+npm outdated
+```
+
+If this module is listed and its current version and latest version mismatches, then update it:
+
+```shell
+npm i @ashwindmk/configer@latest
+```
+
+
 ### Create Config JSON File
 
 Sample `config.json`
