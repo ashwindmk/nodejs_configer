@@ -50,10 +50,14 @@ Here **development** and **production** are the two different environments.
 
 ### Set the config JSON File
 
+Make sure you set the absolute path to the config JSON file.
+
 ```javascript
 const configer = require('@ashwindmk/configer');
+const path = require('path');
 
-configer.setFile('./config.json');
+const absPath = path.resolve('./config.json');
+configer.setFile(absPath);
 ```
 
 
@@ -61,6 +65,29 @@ configer.setFile('./config.json');
 
 ```javascript
 configer.setEnv('development');
+```
+
+##### For setting environment in Node JS Applications:
+
+`package.json`
+```javascript
+{
+    ...
+    "scripts": {
+        "start": "node index.js production",
+        "start-stag": "node index.js staging",
+        "start-dev": "nodemon index.js development",
+        ...
+    }
+}
+```
+
+`index.js`
+```javascript
+const configer = require('@ashwindmk/configer');
+
+const env = process.argv[2];
+configer.setEnv(env);
 ```
 
 
